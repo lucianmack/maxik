@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+    <head>
+        
+{% load static %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>MaxiK</title>
+        <link rel="stylesheet" href="{% static 'proyecto1/css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'proyecto1/css/flexboxgrid.css' %}"">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.css">
+        <link rel="stylesheet" href="{% static 'proyecto1/css/style.css'%}">
+
+</head>
+<body>
+    <div class="row header ">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <img id="logo" src="{% static 'proyecto1/img/logomaxik.jpg' %}" alt="" class="img-fluid">
+        </div>
+        <div class="col xs-12 col-sm-6 md-9">
+            <nav>
+                <ul>
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li><a href="{% url 'Quienes' %}">Quienes Somos</a></li>
+                    <li><a href="{% url 'Contacto' %}">Contáctenos</a></li>
+                    <li><a href="{% url 'registro' %}">Registro de usuario</a></li>
+                    <li><a href="{% url 'Cuenta' %}">Inicia sesión(Mi cuenta)
+                    </a></li>
+                    
+                    <li><a href="{% url 'ordenes' %}">Mis órdenes</a></li>
+
+            </nav>
+        </div>
+    </div>
+{%block contenido   %}
+
+  
+{%endblock contenido   %}
+    <footer class="row">
+        Desarrollo de aplicaciones web y mobile
+    </footer>
+    <footer2 class="col">
+        <p class="text-center">Copyright © 2019</p>
+    </footer2>
+
+    <script src="{% static 'proyecto1/js/jquery-3.4.1.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="{% static 'proyecto1/js/bootstrap.js' %}"></script>
+    <script src="{% static 'proyecto1/js/app.js' %}"></script>
+    <script>
+        $(document).ready(function(){
+            console.log("se ha cargado todo")
+        })
+    </script>
+
+</body>
+</html>

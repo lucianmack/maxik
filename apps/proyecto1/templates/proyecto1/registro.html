@@ -1,0 +1,36 @@
+{%extends 'proyecto1/plantilla.html'%}
+{%load static  %}
+{%block contenido   %}
+<h2>Registro de Usuario</h2>
+<div class="container">
+    <form  method="post" >
+     
+            {% csrf_token %}
+            {{ form }}
+          <div class="form-group">
+            
+                </div><div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" name="first_name" placeholder="Ingrese su Nombre">
+            </div><div class="form-group">
+            <label for="nombre">Apellido</label>
+            <input type="text" class="form-control" name="last_name" placeholder="Ingrese su Apellido">
+          </div><div class="form-group">
+            <label for="correo">Correo</label>
+            <input type="email" class="form-control" name="email" placeholder="Ingrese su Email">
+          </div><div class="form-group">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" class="form-control" name="password" placeholder="Ingrese su Nombre">
+          </div>
+          <div class="form-group">
+           
+        <button type="reset" class="btn btn-warning">Limpiar</button>
+        
+    
+      <button type="submit">Guardar</button>
+     
+    <h1></h1>
+    
+  </form>
+</div>
+{%endblock contenido%}

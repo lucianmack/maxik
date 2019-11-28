@@ -1,0 +1,31 @@
+{%extends 'proyecto1/plantilla.html'%}
+{%load static  %}
+{%block contenido   %}
+<h2>Contáctenos</h2>
+<div class="container">
+    <form action="resultado.html" method="GET" id="formulario">
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" class="form-control" name="nombre" placeholder="Ingrese su Nombre">
+        </div><div class="form-group">
+        <label for="nombre">Apellido</label>
+        <input type="text" class="form-control" name="Apellido" placeholder="Ingrese su Apellido">
+      </div><div class="form-group">
+        <label for="correo">Correo</label>
+        <input type="email" class="form-control" name="correo" placeholder="Ingrese su Email">
+      </div><div class="form-group">
+        <label for="fnacimiento">Fecha Nacimiento</label>
+        <input type="date" class="form-control" name="fnacimiento">
+      </div>
+      <div class="form-group">
+        <label for="bio">Sugerencias</label>
+        <textarea name="bio" class="form-control" rows="3"></textarea>
+      </div>
+    <button type="reset" class="btn btn-warning">Limpiar</button>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+
+    <h1></h1>
+    
+  </form>
+</div>
+{%endblock contenido%}

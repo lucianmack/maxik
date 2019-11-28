@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+#logo{
+    padding: 10px;
+    margin-left: 10px;
+}
+li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+li{
+    float: left;
+    margin: 10px;
+}
+.centrar{
+    text-align: center;
+}
+.blanco{
+    color:#ffffff;
+}
+ul{
+    list-style: none;
+}
+.main{
+    background-color:#ffc107;
+}
+
+.header{
+    background-color:#fd7e14
+    ;
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+footer{
+    background-color: #fd7e14;
+    padding: 20px;
+}
+.footer2{
+    padding: 20px;
+}
